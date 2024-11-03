@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Auth from "./Auth";
 import Frontend from "./Frontend";
 import Dashboard from "./Dashboard";
-import { Navigate, Route, Routes } from "react-router-dom";
 import PrivateRoute from "../components/PrivateRoute";
 import { AuthContext } from "../context/AuthContext";
 

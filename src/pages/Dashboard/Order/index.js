@@ -4,6 +4,7 @@ import { HomeContext } from "../../../context/HomeContext";
 import { collection, doc, getDocs, query, setDoc } from "firebase/firestore";
 import { firestore } from "../../../config/firebase";
 import { AuthContext } from "../../../context/AuthContext";
+import { Link } from "react-router-dom";
 
 export default function Order() {
   const [items, setItems] = useState([]);
@@ -106,7 +107,9 @@ export default function Order() {
                 </tbody>
               </table>
               <div className="text-center">
-                <button className="btn btn-primary">Cart</button>
+                <Link to="/dashboard/cart" className="btn btn-primary">
+                  Cart
+                </Link>
               </div>
             </div>
           </div>
